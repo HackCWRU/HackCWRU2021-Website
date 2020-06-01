@@ -1,0 +1,39 @@
+
+:root{
+    --infared: #D14454;
+}
+
+html{
+    background: rgb(139,122,240);
+    /*background: linear-gradient(45deg, rgba(139,122,240,1) 0%, rgba(119,28,116,1) 25%, rgba(119,28,116,1) 75%, rgba(228,157,250,1) 100%); */
+    background-image: url(./images/vaporbeach.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+body{
+    height: 100vh;
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+.comingSoonContainer{
+    background-color: black;
+    color: var(--infared);
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 10%;
+}
+
+#ComingSoonTitle{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 56px;
+}
+
