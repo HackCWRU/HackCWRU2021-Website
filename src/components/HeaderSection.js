@@ -9,6 +9,7 @@ import CoCPopUp from './CoCPopUp';
 import Confirmation from './Confirmation';
 import { Redirect } from 'react-router-dom';
 import { rgbToHex } from '@material-ui/core';
+import Countdown from './Countdown';
 
 class HeaderSection extends Component {
 
@@ -70,7 +71,7 @@ class HeaderSection extends Component {
               
             </div>
             <div className= "headerButtonSection">
-              <div className="pastEventNotice">This event has passed. See you next year!</div>
+              <Countdown HackDate={'Febrary 4, 2022 00:00:00'}/>
               <div className ="confirmation">
                 <Confirmation signUpConfirmation={this.state.signUpConfirmation}
                   finishSignUp={this.finishSignUp.bind(this)} />
