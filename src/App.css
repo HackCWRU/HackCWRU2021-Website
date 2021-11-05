@@ -11,6 +11,7 @@
   --yellow: #FFC006;
   --darkgrey: #172124;
   --grey: #2F434A;
+  --vaporfont: 'Black Han Sans', sans-serif;
 }
 
 .App {
@@ -99,7 +100,7 @@ body,html {
   /** Count Down Line **/
 #countdown {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
@@ -109,8 +110,8 @@ body,html {
 }
 
 #countdown div{
-  font-family: prstartk;
-  font-size: 15px;
+  font-family: var(--vaporfont);
+  font-size: 35px;
   padding: 5px;
 }
 
@@ -412,8 +413,7 @@ button:hover {cursor: pointer;}
   padding: 10px 0px 10px 150px;
   border: 5px solid var(--red);
   background: var(--darkred);
-  /* \/ placeholder dont @me */
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: var(--vaporfont);
   transform: skewX(-20deg) translateX(-160px);
   color: white;
   font-size: 25px;
