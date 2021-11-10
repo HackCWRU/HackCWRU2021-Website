@@ -21,7 +21,7 @@ class Schedule extends Component{
             <div id = "ScheduleSection" >
                 <div className = "skewTitleBox">
                     <div>
-                        SCHEDULE    
+                        SCHEDULE (tentative)   
                     </div>
                 </div>
                 <div id ="ScheduleGridContainer">

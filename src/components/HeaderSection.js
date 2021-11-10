@@ -52,7 +52,7 @@ class HeaderSection extends Component {
             <div className = "header">
               <div className = "titleContainer">
                 <div className = "mainTitleContainer">
-                  <img id = "CWRUTitle" src =  {hackCWRUTitle} alt = "The HackCWRU7 Title"/>
+                  <img id = "CWRUTitle" src =  {hackCWRUTitle} alt = "The HackCWRU Title"/>
                 </div>
                 <div className = "subTitleAndLogoContainer">
                   <div className = "subTitleContainer">
@@ -88,7 +88,7 @@ class HeaderSection extends Component {
 
 
               <div className = "oldWebsiteButtonGroup">
-                <a href="http://hack.cwru.edu/"><button id="oldWebsiteBtn">2019 website</button></a>
+                <a href="http://hack.cwru.edu/"><button id="oldWebsiteBtn">2020 website</button></a>
               </div>
             </div>
           </div>
