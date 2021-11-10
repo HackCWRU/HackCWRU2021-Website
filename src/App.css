@@ -197,9 +197,10 @@ body,html {
 }
 
 #CWRUTitle {
-  width: 100%;
+  width: 80%;
   height: auto;
 }
+
 .titleContainer {
   width: 100%;
   position: relative;
