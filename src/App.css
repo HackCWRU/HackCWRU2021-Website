@@ -216,6 +216,15 @@ body,html {
 }
 
 @media(max-width: 600px) {
+  #CWRUTitle {
+    position: relative;
+    width: 130%;
+    left: -15%;
+    height: auto;
+  }
+}
+
+@media(max-width: 600px) {
   #subTitle {
     margin-top: 5px;
   }
