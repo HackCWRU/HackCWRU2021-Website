@@ -773,6 +773,11 @@ a:hover, a:active{
   text-decoration: underline;
 }
 
+a.disabled-link {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 
 #tracksGrid{
   width: 100%;
