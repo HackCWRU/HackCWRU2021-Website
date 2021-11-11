@@ -111,7 +111,7 @@ body,html {
 
 #countdown div{
   font-family: var(--vaporfont);
-  font-size: 35px;
+  font-size: 50px;
   padding: 5px;
 }
 
@@ -200,6 +200,7 @@ body,html {
   width: 100%;
   height: auto;
 }
+
 .titleContainer {
   width: 100%;
   position: relative;
@@ -212,6 +213,15 @@ body,html {
   width: 100%;
   height: auto;
   right: 0px;
+}
+
+@media(max-width: 600px) {
+  #CWRUTitle {
+    position: relative;
+    width: 130%;
+    left: -15%;
+    height: auto;
+  }
 }
 
 @media(max-width: 600px) {
@@ -773,6 +783,11 @@ a:hover, a:active{
   text-decoration: underline;
 }
 
+a.disabled-link {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 
 #tracksGrid{
   width: 100%;
@@ -986,7 +1001,7 @@ a:hover, a:active{
     }
     
     #countdown div{
-      font-size: 12px;
+      font-size: 25px;
     }
     .header {
         position: relative;
