@@ -6,7 +6,7 @@ class DevpostButton extends Component{
     render(){
         return (
             <div id = "DevpostButton" >
-                <a href="/"> <img id="devpostLogo" src = {DevpostLogo} onClick="openDevpost()" alt=""></img> </a>
+                <a href="https://hackcwru-2021.devpost.com/"> <img id="devpostLogo" src = {DevpostLogo} onClick="openDevpost()" alt=""></img> </a>
             </div>
         )
     }

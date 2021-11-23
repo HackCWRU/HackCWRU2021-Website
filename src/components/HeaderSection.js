@@ -55,7 +55,7 @@ class HeaderSection extends Component {
                   <img id = "CWRUTitle" src =  {hackCWRUTitle} alt = "The HackCWRU Title"/>
                 </div>
                 <div className = "subTitleAndLogoContainer">
-                  <div className = "subTitleContainer">
+                  <div className = "subTitleContainer"> 
                     <div class="subTitleGrid">
                       <div id="headerInfo">
                         <div id = "CWRU" className = "bigClearText">Case Western Reserve University</div>
@@ -80,8 +80,18 @@ class HeaderSection extends Component {
 
               <div className = "registerButtonGroup">
               
-              {/*<button onClick={this._onButtonClick.bind(this)} id="registerBtn">Register</button>*/}
-              <button id="registerBtn">Register</button>
+              {
+                <button onClick={
+                  //this._onButtonClick.bind(this)
+                  this._onButtonClick.bind( (e) => {
+                    e.preventDefault();
+                    window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeRPp1tLWAgMvsGbwPTGD2nfasxWoi0YXOfX7zn9T5viDp3Gg/viewform?usp=sf_link'
+                  } )
+                } 
+                id="registerBtn">Register
+                </button>
+              //<button id="registerBtn">Register</button>
+              }
               <CoCPopUp showCodeOfConductBox={this.state.showCodeOfConductBox}
                         _onButtonClick={this._onButtonClick.bind(this)} />
               </div>

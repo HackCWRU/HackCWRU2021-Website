@@ -102,7 +102,10 @@ class App extends Component{
       <Router>
             <root>
               
-            <DevpostButton/>
+        {
+            
+          //<DevpostButton/>
+        }
       <div class="parallax">
         
         <div class="parallax__layer parallax__layer--far"></div>
@@ -120,11 +123,14 @@ class App extends Component{
                       )}/>
                 </Switch>
                 <About/>
-                <TracksSection/>
+                {/*
                 <FAQ/>
+                <TracksSection/>
                 <Schedule/>
                 {
                   //<SponsorshipSection/>
+                }
+                */
                 }
               </div>
 
