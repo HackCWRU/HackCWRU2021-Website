@@ -199,13 +199,16 @@ body,html {
 #CWRUTitle {
   width: 100%;
   height: auto;
+  align-items: center;
 }
 
 .titleContainer {
+  align-items: center;
   width: 100%;
   position: relative;
   box-sizing: border-box;
-  padding: 0 25px;
+  scale: 95%;
+  padding: 0 5px;
 }
 
 #subTitle {
@@ -232,19 +235,19 @@ body,html {
 
 
 .subTitleContainer{
-  text-align: left;
+  text-align: center;
 }
 
 .subTitleGrid{
-  display: flex;
+  /*display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;*/
   justify-content: space-between;
 }
 
 @media(max-width:1096px){
   .subTitleGrid div{
-    flex-basis: 100%;
+    /*flex-basis: 100%;*/
   }
 
   #year img{
@@ -321,16 +324,16 @@ button:hover {cursor: pointer;}
   border-style: solid;
   transition: border-color .08s, color .08s, text-shadow .08s, box-shadow .08s;
   /*since it is now disabled*/
-  cursor: not-allowed;
+  /*cursor: not-allowed;*/
 }
 
-/*#registerBtn:hover{
+#registerBtn:hover{
   text-shadow:0 0 10px var(--red);
   background: none;
   border-color: rgb(255, 193, 193);
   box-shadow: 0 0 15px 2px var(--red), 0 0 12px 2px var(--red) inset;
   color: rgb(255, 193, 193);
-}*/
+}
 
 .pastEventNotice{
   color:white;
@@ -383,6 +386,7 @@ button:hover {cursor: pointer;}
 }
 
 .bigClearText {
+  text-align: center;
   font-family: opensans;
   color: #D5DDE2;
   font-size: 30px;

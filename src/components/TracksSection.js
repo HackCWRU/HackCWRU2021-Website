@@ -37,7 +37,7 @@ class TracksSection extends Component{
                     Coming soon: 
                     <br/>
                     Check out the HackCWRU2022 <a className="disabled-link" 
-                    href="https://hackcwru-2021.devpost.com/">Devpost</a> to see our prizes and judges.
+                    href="https://hackcwru-2022.devpost.com/">Devpost</a> to see our prizes and judges.
                 </div>
             </div>
         )

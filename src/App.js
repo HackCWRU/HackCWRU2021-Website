@@ -122,8 +122,9 @@ class App extends Component{
                       <HeaderSection key={Math.random()} signUpConfirmation={true}/>   
                       )}/>
                 </Switch>
-                <About/>
+                
                 {/*
+                <About/>
                 <FAQ/>
                 <TracksSection/>
                 <Schedule/>

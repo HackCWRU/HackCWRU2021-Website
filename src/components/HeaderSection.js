@@ -54,30 +54,40 @@ class HeaderSection extends Component {
                 <div className = "mainTitleContainer">
                   <img id = "CWRUTitle" src =  {hackCWRUTitle} alt = "The HackCWRU Title"/>
                 </div>
+              
                 <div className = "subTitleAndLogoContainer">
                   <div className = "subTitleContainer"> 
                     <div class="subTitleGrid">
                       <div id="headerInfo">
-                        <div id = "CWRU" className = "bigClearText">Case Western Reserve University</div>
+                      {  
+                      //<div id = "CWRU" className = "bigClearText">Case Western Reserve University</div> 
+                      }
                         <div id = "date" className = "bigClearText">February 4-6th 2022</div>
-                        <div className = "bigClearText">Check-in: 5:30PM at </div>
+                        <div className = "bigClearText">Check-in: 5:30PM </div>
                         <div className = "bigClearText"><a href="https://www.google.com/maps/place/Sears+think%5Bbox%5D/@41.5005757,-81.6078735,17z/data=!3m1!4b1!4m5!3m4!1s0x8830fb871a38380b:0xed457fd242d00e1a!8m2!3d41.5005757!4d-81.6056848">Sears think[box]</a></div>
                       </div>
                     </div>
+                    {
+                      //<Countdown HackDate={'Febrary 4, 2022 17:30:00'}/>
+                    }
                   </div>
-                  <Logo/>
+                  {
+                    // <Logo/>
+                  }
                 </div>
               </div>
               
             </div>
             <div className= "headerButtonSection">
-              <Countdown HackDate={'Febrary 4, 2022 00:00:00'}/>
-              <div className ="confirmation">
+              {
+                /*
+                <div className ="confirmation">
                 <Confirmation signUpConfirmation={this.state.signUpConfirmation}
                   finishSignUp={this.finishSignUp.bind(this)} />
 
-              </div>
-
+                </div>
+                */
+              }
               <div className = "registerButtonGroup">
               
               {
@@ -92,14 +102,17 @@ class HeaderSection extends Component {
                 </button>
               //<button id="registerBtn">Register</button>
               }
-              <CoCPopUp showCodeOfConductBox={this.state.showCodeOfConductBox}
+              {/*<CoCPopUp showCodeOfConductBox={this.state.showCodeOfConductBox}
                         _onButtonClick={this._onButtonClick.bind(this)} />
+            */}
               </div>
 
 
+              {/*
               <div className = "oldWebsiteButtonGroup">
                 <a href="http://hack.cwru.edu/"><button id="oldWebsiteBtn">2020 website</button></a>
               </div>
+              */}
             </div>
           </div>
         );
