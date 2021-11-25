@@ -1,5 +1,4 @@
 :root {
-  --background:#000D1A;
   --darkred:#971908;
   --red:#FF1E01;
   --darkblue:#0B3C61;
@@ -13,9 +12,20 @@
   --grey: #2F434A;
   --vaporfont: 'Black Han Sans', sans-serif;
 }
-
+html{
+  background: rgb(139,122,240);
+  /*background: linear-gradient(45deg, rgba(139,122,240,1) 0%, rgba(119,28,116,1) 25%, rgba(119,28,116,1) 75%, rgba(228,157,250,1) 100%); */
+  background-image: url('./Assets/backgrounds/vaporbeach.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
 .App {
-  padding: 50px 150px;
+  padding-bottom: 10%;
+  padding-top: 10%;
   overflow-x: initial;
 }
 
@@ -47,6 +57,11 @@
 @font-face {
   font-family: prstartk;
   src: url("./Assets/font/prstartk.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: foxcavalier;
+  src: url("./Assets/font/FoxCavalier.ttf.ttf") format('truetype');
 }
 
 @font-face {
@@ -139,7 +154,7 @@ body,html {
   margin-bottom: 150px;
 } 
 
-/* classses for the parallax stars effect */
+/* classses for the parallax stars effect
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -183,7 +198,7 @@ body,html {
   .parallax__layer--close {
     background-size: 220%;
   }
-}
+}*/
 
   
 /* header section css */
@@ -193,12 +208,18 @@ body,html {
 }
 
 #HeaderSection {
-  position: relative;
+  overflow-x: visible;
+  overflow-x: initial;
+  background-color: #0d0221;
+  color: var(--infared);
+  width: 100%;
+  display: block;
+  margin: auto;
+
 }
 
 #CWRUTitle {
-  width: 100%;
-  height: auto;
+  width: 60%;
   align-items: center;
 }
 
@@ -209,6 +230,7 @@ body,html {
   box-sizing: border-box;
   scale: 95%;
   padding: 0 5px;
+  
 }
 
 #subTitle {
@@ -221,8 +243,6 @@ body,html {
 @media(max-width: 600px) {
   #CWRUTitle {
     position: relative;
-    width: 130%;
-    left: -15%;
     height: auto;
   }
 }
@@ -312,9 +332,8 @@ button:hover {cursor: pointer;}
 
 
 #registerBtn{
-  font-family: games;
-  letter-spacing: 4px;
-  font-size: 45px;
+  font-family: 'foxcavalier';
+  font-size: 3vw;
   padding: 10px 20px;
   border-radius: 15px;
   background: none;
@@ -389,7 +408,7 @@ button:hover {cursor: pointer;}
   text-align: center;
   font-family: opensans;
   color: #D5DDE2;
-  font-size: 30px;
+  font-size: 2vw  ;
 }
 
 @media(max-width: 600px) {
@@ -997,7 +1016,7 @@ a.disabled-link {
     } 
 
     .App{
-      padding: 90px 15px;
+      padding: 50% 0px;
     }
 
     #FAQBackgroundContainer{
