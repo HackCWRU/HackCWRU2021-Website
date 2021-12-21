@@ -15,8 +15,14 @@
 }
 
 .App {
-  padding: 50px 150px;
-  overflow-x: initial;
+  /*padding: 50px 150px;*/
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow-x: visible;
+  overflow-x: initial;  
+  height:100%
 }
 
 .App-logo {
@@ -53,17 +59,27 @@
   font-family: games;
   src: url("./Assets/font/Games.ttf") format('truetype');
 }
-
+@font-face {
+  font-family: fox;
+  src: url("./Assets/font/FoxCavalier.ttf.ttf") format('truetype');
+}
 @font-face {
   font-family: opensans;
   src: url("./Assets/font/OpenSans-Regular.ttf") format('truetype');
 }
 
 body {
-  /*background-image:url("./Assets/backgrounds/Header_Section_Background.svg");*/
+  /*background-image:url("./Assets/backgrounds/Header_Section_Background.svg");
   background-color: var(--background);
   background-repeat: repeat;
-  background-size: cover;
+  background-size: cover;*/
+  background-image: 
+    linear-gradient(45deg, #541388 25%, transparent 25%), 
+    linear-gradient(-45deg, #541388 25%,transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #541388 75%), 
+    linear-gradient(-45deg, #D40078 75%, #541388 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
 
 body,html {
@@ -111,7 +127,7 @@ body,html {
 
 #countdown div{
   font-family: var(--vaporfont);
-  font-size: 50px;
+  font-size: 3.5vw;
   padding: 5px;
 }
 
@@ -136,10 +152,10 @@ body,html {
 
 /* classes for all sections */
 #AboutSection, #HeaderSection, #FAQSection, #SponsorShipSection, #ScheduleSection, #TracksSection{
-  margin-bottom: 150px;
+  margin-bottom: 20px;
 } 
 
-/* classses for the parallax stars effect */
+/* classses for the parallax stars effect 
 .parallax {
   perspective: 1px;
   height: 100vh;
@@ -184,7 +200,7 @@ body,html {
     background-size: 220%;
   }
 }
-
+*/
   
 /* header section css */
 .header {
@@ -194,18 +210,26 @@ body,html {
 
 #HeaderSection {
   position: relative;
+  background-color: #261447;
+  overflow-x: visible;
+  overflow-x: initial;
+  background-color: #0d0221;
+  color: var(--infared);
+  display: block;
+  margin: auto;
 }
 
 #CWRUTitle {
-  width: 100%;
-  height: auto;
+  width: 60%;
+  align-items: center;
 }
 
 .titleContainer {
+  align-items: center;
   width: 100%;
   position: relative;
   box-sizing: border-box;
-  padding: 0 25px;
+  padding: 0 5px;
 }
 
 #subTitle {
@@ -218,8 +242,7 @@ body,html {
 @media(max-width: 600px) {
   #CWRUTitle {
     position: relative;
-    width: 130%;
-    left: -15%;
+    width: 100%;
     height: auto;
   }
 }
@@ -236,9 +259,9 @@ body,html {
 }
 
 .subTitleGrid{
-  display: flex;
+  /*display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;*/
   justify-content: space-between;
 }
 
@@ -309,18 +332,17 @@ button:hover {cursor: pointer;}
 
 
 #registerBtn{
-  font-family: games;
-  letter-spacing: 4px;
-  font-size: 45px;
-  padding: 10px 20px;
+  font-family: fox;
+  /* letter-spacing: 4px; */
+  font-size: 3vw;
+  padding: .2vw .4vw;
   border-radius: 15px;
   background: none;
-  border-color: var(--red);
-  border-width: 2px;
+  color: #ff1e01;
   color: var(--red);
-  border-style: solid;
-  transition: border-color .08s, color .08s, text-shadow .08s, box-shadow .08s;
-  /*since it is now disabled*/
+  border: 2px solid #ff1e01;
+  border-color: var(--red);
+  transition: border-color .08s,color .08s,text-shadow .08s,box-shadow .08s;
   cursor: not-allowed;
 }
 
@@ -365,7 +387,8 @@ button:hover {cursor: pointer;}
 .registerButtonGroup, .oldWebsiteButtonGroup{
   color: white;
   padding: 10px;
-  font-family: games;
+  padding-top: 0%;
+  font-family: fox;
   display: inline-block;
   text-align: center;
 }
@@ -383,14 +406,15 @@ button:hover {cursor: pointer;}
 }
 
 .bigClearText {
+  text-align: center;
   font-family: opensans;
-  color: #D5DDE2;
-  font-size: 30px;
+  color: hsl(203, 18%, 86%);
+  font-size: 2vw;
 }
 
 @media(max-width: 600px) {
   .bigClearText {
-    font-size: 20px;
+    font-size: 2vw;
   }
 }
 
@@ -463,6 +487,7 @@ button:hover {cursor: pointer;}
 }
 
 #AboutGrid{
+  background-color: #261447; 
   width: 100%;
   justify-content: center;
   display: flex;
@@ -679,6 +704,7 @@ button:hover {cursor: pointer;}
 /* classes for the sponsorship section*/
 
 #SponsorshipSection{
+  background-color: #261447;
   margin-bottom: 50px;
   color: white;
   
@@ -899,7 +925,7 @@ a.disabled-link {
 
 /* Classess for Devpost Button */
 #DevpostButton{
-  position: absolute;
+  position: fixed;
   bottom:0;
   right:0;
   width:300px;
@@ -1025,5 +1051,27 @@ a.disabled-link {
 }
 
   
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2e2157;
+}
 
+.navbar li {
+  float: left;
+}
 
+.navbar li a {
+  font-family: fox;
+  display: block;
+  color: #920075;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #111;
+}

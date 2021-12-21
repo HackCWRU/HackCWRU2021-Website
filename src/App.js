@@ -83,6 +83,7 @@ import FAQ from "./components/FAQ";
 import Schedule from "./components/Schedule";
 import TracksSection from "./components/TracksSection";
 import DevpostButton from "./components/DevpostButton";
+import Navbar from "./components/Navbar";
 //import headerBackground from "./Assets/backgrounds/Header_Section_Background.svg";
 import './App.css';
 import {Countdown,About} from './components';
@@ -98,16 +99,19 @@ class App extends Component{
 
   render() {
     return (
-      
       <Router>
-            <root>
-              
-            <DevpostButton/>
-      <div class="parallax">
+        <root>
+        <Navbar />
+        <DevpostButton/>
+      
         
-        <div class="parallax__layer parallax__layer--far"></div>
-        <div class="parallax__layer parallax__layer--close"></div>
-
+        {
+          /*
+          <div class="parallax">
+          <div class="parallax__layer parallax__layer--far"></div>
+          <div class="parallax__layer parallax__layer--close"></div>
+          */
+        }
               <div className = "App" >
                 
                 {/*<Countdown HackDate = {this.state.HackDate} />*/}
@@ -115,17 +119,30 @@ class App extends Component{
                   <Route key="home" path="/" exact strict render={() => (
                       <HeaderSection key={Math.random()}  signUpConfirmation={false}/>   
                       )}/>
+                  <Route key="about" path="/about">
+                    <About />
+                    <TracksSection />
+                  </Route>
+                  <Route key="sponsors" path="/sponsors">
+                    <SponsorshipSection />
+                  </Route>
+                  <Route key="FAQ" path="/faq">
+                    <FAQ />
+                  </Route>
+                  <Route key="schedule" path="/schedule">
+                    <div class="bigClearText">Coming Soon!</div>
+                  </Route>
                   <Route key="finishSignUp" path="/confirm" render={({match}) => (
                       <HeaderSection key={Math.random()} signUpConfirmation={true}/>   
                       )}/>
                 </Switch>
-                <About/>
+                {/*<About/>
                 <TracksSection/>
                 <FAQ/>
                 <Schedule/>
-                {
+                
                   //<SponsorshipSection/>
-                }
+                */}
               </div>
 
               {/*<!-- The core Firebase JS SDK is always required and must be listed first -->*/}
@@ -138,7 +155,9 @@ class App extends Component{
               <script src="/__/firebase/init.js"></script>
 
 
-              </div>
+              {
+              //</div>
+            }
 
             </root>
           </Router>

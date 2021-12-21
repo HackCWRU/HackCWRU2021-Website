@@ -15,7 +15,9 @@ class Countdown extends Component{
         const {timeLeft} = this.state;
         return (
             <div id = "countdown">
-                <div id = "countdownTitle"> COUNTDOWN TO HACKCWRU 2022: </div>
+            {
+            //    <div id = "countdownTitle"> COUNTDOWN TO HACKCWRU 2022: </div> 
+            }
                 <div id = "countdownNumbers">&nbsp;{timeLeft}</div>
             </div>
         )

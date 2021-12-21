@@ -8,12 +8,12 @@ class FAQ extends Component{
             <div id = "FAQSection">
                 {/*<div id="FAQBackgroundContainer">
                     <img id = "waterFall" src= {waterFall}></img>
-                </div>*/}
+                </div>
                 <div className = "skewTitleBox">
                     <div>
                         FAQ
                     </div>
-                </div>
+                </div>*/}
                 <div id = "FAQBoxesContainer">
                     <div id ="FAQBoxesGrid">
                         <div className="row">
@@ -25,8 +25,8 @@ class FAQ extends Component{
                             </div>
                             <div class="FAQItem">
                                 <FAQBox question={"Who can attend?"} 
-                                answer={`Anyone currently enrolled in a high school, 
-                                undergraduate, or graduate program can attend.`}/>
+                                answer={`Anyone currently enrolled in an
+                                undergraduate or graduate program can attend.`}/>
                             </div>
                             <div class="FAQItem">
                                 <FAQBox question={"What if I don't have a lot of experience?"} 
@@ -71,6 +71,16 @@ class FAQ extends Component{
                             <div class="FAQItem">
                                 <FAQBox question={"Is there free parking?"} 
                                 answer={`Yes! We will have a reserved parking lot you can use for free.`}/>
+                            </div>
+                            <div class="FAQItem">
+                                <FAQBox question={"Placeholder"}
+                                answer={`Placeholder`}
+                                />
+                            </div>
+                            <div class="FAQItem">
+                                <FAQBox question={"Placeholder"}
+                                answer={`Placeholder`}
+                                />
                             </div>
                         </div>
                         
