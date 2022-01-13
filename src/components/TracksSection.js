@@ -33,12 +33,12 @@ class TracksSection extends Component{
                         
                     </div>
                 </div>
-                <div id = "prizesMessage" className="bigClearText">
+                {/*<div id = "prizesMessage" className="bigClearText">
                     Coming soon: 
                     <br/>
                     Check out the HackCWRU2022 <a className="disabled-link" 
                     href="https://hackcwru-2020.devpost.com/">Devpost</a> to see our prizes and judges.
-                </div>
+        </div>*/}
             </div>
         )
     }

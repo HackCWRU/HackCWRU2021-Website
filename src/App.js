@@ -115,34 +115,29 @@ class App extends Component{
               <div className = "App" >
                 
                 {/*<Countdown HackDate = {this.state.HackDate} />*/}
-                <Switch>
-                  <Route key="home" path="/" exact strict render={() => (
-                      <HeaderSection key={Math.random()}  signUpConfirmation={false}/>   
-                      )}/>
-                  <Route key="about" path="/about">
-                    <About />
-                    <TracksSection />
-                  </Route>
-                  <Route key="sponsors" path="/sponsors">
-                    <SponsorshipSection />
-                  </Route>
-                  <Route key="FAQ" path="/faq">
-                    <FAQ />
-                  </Route>
-                  <Route key="schedule" path="/schedule">
-                    <div class="bigClearText">Coming Soon!</div>
-                  </Route>
-                  <Route key="finishSignUp" path="/confirm" render={({match}) => (
-                      <HeaderSection key={Math.random()} signUpConfirmation={true}/>   
-                      )}/>
-                </Switch>
-                {/*<About/>
+                <div id="header">
+                  <Switch>
+                    <Route key="home" path="/" exact strict render={() => (
+                        <HeaderSection key={Math.random()}  signUpConfirmation={false}/>   
+                        )}/>
+                    <Route key="finishSignUp" path="/confirm" render={({match}) => (
+                        <HeaderSection key={Math.random()} signUpConfirmation={true}/>   
+                        )}/>
+                  </Switch>
+                </div>
+                <div id="about">
+                <About/>
                 <TracksSection/>
+                </div>
+                <div id="faq">
                 <FAQ/>
+                </div>
+                <div id="schedule">
                 <Schedule/>
-                
-                  //<SponsorshipSection/>
-                */}
+                </div>
+                <div id="sponsors">
+                <SponsorshipSection/>
+                </div>
               </div>
 
               {/*<!-- The core Firebase JS SDK is always required and must be listed first -->*/}

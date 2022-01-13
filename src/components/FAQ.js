@@ -8,20 +8,18 @@ class FAQ extends Component{
             <div id = "FAQSection">
                 {/*<div id="FAQBackgroundContainer">
                     <img id = "waterFall" src= {waterFall}></img>
-                </div>
+                </div>*/
                 <div className = "skewTitleBox">
                     <div>
                         FAQ
                     </div>
-                </div>*/}
+                </div>}
                 <div id = "FAQBoxesContainer">
                     <div id ="FAQBoxesGrid">
                         <div className="row">
                             <div class="FAQItem">
                                 <FAQBox question={"Where will HackCWRU 2022 take place?"} 
-                                answer={`Hackers will be working in CWRU's Sears think[box]. 
-                                Attendees can check in at the Veale Center lobby, 
-                                2138 Adelbert Rd, Cleveland, OH 44106.`}/>
+                                answer={`HackCWRU 2022 will be fully digital, to accomodate the ongoing COVID-19 pandemic`}/>
                             </div>
                             <div class="FAQItem">
                                 <FAQBox question={"Who can attend?"} 
@@ -41,47 +39,43 @@ class FAQ extends Component{
                                 You are not required to be part of a team.`}/>
                             </div>
                             <div class="FAQItem">
-                                <FAQBox question={"Will travel be reimbursed?"} 
-                                answer={`We guarantee up to $50 in travel reimbursement per person. 
-                                Just make sure to save your travel receipt!`}/>
-                            </div>
-                            <div class="FAQItem">
                                 <FAQBox question={"How much does it cost?"} 
-                                answer={`Nothing. Food, drinks, power, building materials, 
-                                and machine time are all provided for free.`}/>
+                                answer={`Nothing. Signups are free!`}/>
                             </div>
                             <div class="FAQItem">
-                                <FAQBox question={"What should I bring?"} 
-                                answer={`Besides your computer, bring anything that 
-                                you'd like to hack with or that would make your sleepover more comfortable. 
-                                We suggest a sleeping bag, a toothbrush, and a change of clothes. 
-                                **Also, please bring a valid state ID or driver's license.**`}/>
+                                <FAQBox question={"Is it still possible to do a hardware project if the hackathon is digital?"} 
+                                answer={`Yes! At the end of the Hackathon, you will submit a 5-10 minute video presentation 
+                                explaining your project and demonstrating its feasibility.`}/>
                             </div>
                             <div class="FAQItem">
-                                <FAQBox question={"Do I have to sleep over?"} 
-                                answer={`No. You may come and go from the hackathon as you want.`}/>
+                                <FAQBox question={"I want to do a hardware project, but I don't the resources to make it. What should I do?"} 
+                                answer={`You can design your hardware project using a CAD tool like Solidworks or Inventor, which you will 
+                                then show in your recording.`}/>
                             </div>
                             <div class="FAQItem">
-                                <FAQBox question={"What if I don't have equipment to make my hack?"} 
-                                answer={`We have that covered! We'll have laptops, 
-                                3D printers and a lot of MLH-provided hardare 
-                                (including fancy VR stuff like the Oculus Rift!) 
-                                provided for you to rent out for free.`}/>
+                                <FAQBox question={"My computer isn't powerful enough to make my Hack. What should I do?"} 
+                                answer={`Computer not powerful enough? We've set up 100 remote AWS dev environments. For more info go to hackcwru.info/remotedev`}/>
                             </div>
                             <div class="FAQItem">
-                                <FAQBox question={"Is there free parking?"} 
-                                answer={`Yes! We will have a reserved parking lot you can use for free.`}/>
+                                <FAQBox question={"How will we receive swag and prizes if the Hackathon is digital?"} 
+                                answer={`Prizes and swag will all be delivered via mail.`}/>
+                            </div>
+{/*                            <div class="FAQItem">
+                                <FAQBox question={"Placeholder"} 
+                                answer={`Placeholder.`}/>
+                            </div>
+
+                            <div class="FAQItem">
+                                <FAQBox question={"Placeholder"}
+                                answer={`Placeholder`}
+                                />
                             </div>
                             <div class="FAQItem">
                                 <FAQBox question={"Placeholder"}
                                 answer={`Placeholder`}
                                 />
                             </div>
-                            <div class="FAQItem">
-                                <FAQBox question={"Placeholder"}
-                                answer={`Placeholder`}
-                                />
-                            </div>
+        */}
                         </div>
                         
                     </div>

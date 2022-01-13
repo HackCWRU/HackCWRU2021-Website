@@ -154,6 +154,10 @@ body,html {
 #AboutSection, #HeaderSection, #FAQSection, #SponsorShipSection, #ScheduleSection, #TracksSection{
   margin-bottom: 20px;
 } 
+#HeaderSection{
+  margin-bottom: 20px;
+  padding: 5% 0%;
+}
 
 /* classses for the parallax stars effect 
 .parallax {
@@ -487,7 +491,7 @@ button:hover {cursor: pointer;}
 }
 
 #AboutGrid{
-  background-color: #261447; 
+  background-color: #0d0221; 
   width: 100%;
   justify-content: center;
   display: flex;
@@ -624,6 +628,7 @@ button:hover {cursor: pointer;}
 }
 
 #ScheduleGridContainer{
+  background-color: #0d0221;
   color: white;
   display: flex;
   padding: 25px 0;
@@ -704,7 +709,7 @@ button:hover {cursor: pointer;}
 /* classes for the sponsorship section*/
 
 #SponsorshipSection{
-  background-color: #261447;
+  background-color: #0d0221;
   margin-bottom: 50px;
   color: white;
   
@@ -764,9 +769,9 @@ button:hover {cursor: pointer;}
 
 #SponsorGrid div img{
   width: 100%;
-  transition: filter .25s ease-in-out;
+  /*transition: filter .25s ease-in-out;
   -webkit-filter: grayscale(100%) contrast(20%) brightness(50%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(100%) contrast(20%) brightness(50%); /* FF 35+ */
+  /*filter: grayscale(100%) contrast(20%) brightness(50%); /* FF 35+ */
 }
 
 @media(max-width:600px){
@@ -1014,13 +1019,16 @@ a.disabled-link {
 
 /** responsive for mobile phone **/
  @media only screen and (max-width: 600px) {
-    .countdown {
-      margin: 5px 0;
-    } 
+   .navbar {
+     display: none;
+   }
+  .countdown {
+    margin: 5px 0;
+  } 
 
-    .App{
-      padding: 90px 15px;
-    }
+  .App{
+    padding: 90px 15px;
+  }
 
     #FAQBackgroundContainer{
       margin: 0px -15px;
@@ -1050,7 +1058,11 @@ a.disabled-link {
   }
 }
 
-  
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}  
 .navbar ul {
   list-style-type: none;
   margin: 0;

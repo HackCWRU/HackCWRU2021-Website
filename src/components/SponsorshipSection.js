@@ -4,6 +4,7 @@ class SponsorshipSection extends Component{
     render(){
         return (
             <div id = "SponsorshipSection" >
+                
                 <div id = "sponsorshipHeader">
                     Make connections <br/>with our incredible sponsors...
                 </div>
