@@ -12,9 +12,9 @@ class Navbar extends Component {
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#sponsors">SPONSORS</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#schedule">SCHEDULE</a></li>
+                    <li><a href="#sponsors">SPONSORS</a></li>
                 </ul>
             </div>
         )    

@@ -9,3 +9,9 @@ If you don't have firebase CLI, install it with `curl -sL https://firebase.tools
 2) `npm run build` to create a build directory  
 3) `firebase emulators:start` to launch a test server
 
+# TODO:
+- Mobile Friendly
+- Sign up form 
+    - Firestore?
+- Footnotes
+-

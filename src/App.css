@@ -18,11 +18,11 @@
   /*padding: 50px 150px;*/
   padding-top: 2%;
   padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-  overflow-x: visible;
-  overflow-x: initial;  
-  height:100%
+  /*padding-left: 5%;
+  padding-right: 5%;*/
+  overflow-x: clip;
+  height:100%;
+
 }
 
 .App-logo {
@@ -136,6 +136,7 @@ body,html {
 /** flexbox classes **/
 .flex-grid {
   display: flex;
+  justify-content: center;
 }
 .col {
   flex: 1;
@@ -151,9 +152,11 @@ body,html {
 
 
 /* classes for all sections */
-#AboutSection, #HeaderSection, #FAQSection, #SponsorShipSection, #ScheduleSection, #TracksSection{
-  margin-bottom: 20px;
+#AboutSection, #HeaderSection, #SponsorshipSection, #FAQSection, #ScheduleSection, #TracksSection{
+  margin-top: 2vw;
+
 } 
+
 #HeaderSection{
   margin-bottom: 20px;
   padding: 5% 0%;
@@ -163,7 +166,7 @@ body,html {
 .parallax {
   perspective: 1px;
   height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
   overflow-y: auto;
 }
 .parallax__layer {
@@ -215,8 +218,7 @@ body,html {
 #HeaderSection {
   position: relative;
   background-color: #261447;
-  overflow-x: visible;
-  overflow-x: initial;
+  overflow-x: clip;
   background-color: #0d0221;
   color: var(--infared);
   display: block;
@@ -486,7 +488,7 @@ button:hover {cursor: pointer;}
   left: 500px;
 }
 
-#about {
+#about #faq #schedule #sponsors{
   padding: 50px 50px 50px 0;
 }
 
@@ -495,7 +497,6 @@ button:hover {cursor: pointer;}
   width: 100%;
   justify-content: center;
   display: flex;
-  padding: 0px 15px;
 }
 
 #AboutGrid .row{
@@ -710,7 +711,7 @@ button:hover {cursor: pointer;}
 
 #SponsorshipSection{
   background-color: #0d0221;
-  margin-bottom: 50px;
+  margin-top: 50px;
   color: white;
   
 }
@@ -934,7 +935,7 @@ a.disabled-link {
   bottom:0;
   right:0;
   width:300px;
-  padding: 15px;
+  /*padding: 15px;*/
   z-index: 10;
   box-sizing: border-box;
 }

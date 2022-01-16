@@ -59,7 +59,7 @@ class HeaderSection extends Component {
                     <div class="subTitleGrid">
                       <div id="headerInfo">
                         <div id = "CWRU" className = "bigClearText">Case Western Reserve University</div>
-                        <div id = "date" className = "bigClearText">March 19-21 2022</div>
+                        <div id = "date" className = "bigClearText">March 18-20 2022</div>
                       { // <div className = "bigClearText">Check-in: 5:30PM at </div>
                         // <div className = "bigClearText"><a href="https://www.google.com/maps/place/Sears+think%5Bbox%5D/@41.5005757,-81.6078735,17z/data=!3m1!4b1!4m5!3m4!1s0x8830fb871a38380b:0xed457fd242d00e1a!8m2!3d41.5005757!4d-81.6056848">Sears think[box]</a></div>
                         //
@@ -75,7 +75,7 @@ class HeaderSection extends Component {
               
             </div>
             <div className= "headerButtonSection">
-              <Countdown HackDate={'March 19, 2022 00:00:00'}/>
+              <Countdown HackDate={'March 18, 2022 00:00:00'}/>
               <div className ="confirmation">
                 <Confirmation signUpConfirmation={this.state.signUpConfirmation}
                   finishSignUp={this.finishSignUp.bind(this)} />
@@ -84,13 +84,13 @@ class HeaderSection extends Component {
 
               <div className = "registerButtonGroup">
               
-              {/*<button onClick={this._onButtonClick.bind(this)} id="registerBtn">Register</button>
-              <button id="registerBtn">Register</button>
+              <button onClick={this._onButtonClick.bind(this)} id="registerBtn">Register</button>
+              
               <CoCPopUp showCodeOfConductBox={this.state.showCodeOfConductBox}
-                _onButtonClick={this._onButtonClick.bind(this)} /> */}
+                _onButtonClick={this._onButtonClick.bind(this)} /> 
               <a id="registerBtn" href="https://docs.google.com/forms/d/e/1FAIpQLSeRPp1tLWAgMvsGbwPTGD2nfasxWoi0YXOfX7zn9T5viDp3Gg/viewform?usp=sf_link">
                 REGISTER
-              </a>
+              </a> 
 
               </div>
 
