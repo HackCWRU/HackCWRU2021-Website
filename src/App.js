@@ -12,11 +12,12 @@ import './App.css';
 import {Countdown,About} from './components';
 import {Switch, BrowserRouter as Router, Route} from 'react-router-dom';
 
+
 class App extends Component{
   constructor(props){
     super(props);
     this.state = {
-      HackDate: 'Feb 7, 2020 19:00:00'
+      HackDate: 'Mar 18, 2020 19:00:00'
     }
   }
 
@@ -25,8 +26,8 @@ class App extends Component{
       <Router>
         <root>
         <Navbar />
-        <DevpostButton/>
-      
+        {//<DevpostButton/>
+  } 
         
         {
           /*
@@ -36,7 +37,6 @@ class App extends Component{
           */
         }
               <div className = "App" >
-                
                 {/*<Countdown HackDate = {this.state.HackDate} />*/}
                 <div id="header">
                   <Switch>
@@ -50,7 +50,6 @@ class App extends Component{
                 </div>
                 <div id="about"/>
                 <About/>
-                <TracksSection/>
                 <div id="faq">
                 </div>
                 <FAQ/>
@@ -61,9 +60,6 @@ class App extends Component{
                 <div id="sponsors">
                 </div>
                 <SponsorshipSection/>
-                {/*<div id="form">
-                  <Signup/>
-                </div>*/}
               </div>
 
               {/*<!-- The core Firebase JS SDK is always required and must be listed first -->*/}

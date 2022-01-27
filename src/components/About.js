@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import TracksSection from './TracksSection';
 
 class About extends Component{
     render(){
         return (
             <div id = "AboutSection" >
-                {<div className = "skewTitleBox">
+                {/*<div className = "skewTitleBox">
                     <div>
                         WHAT IS HACKCWRU?
                     </div>
-        </div>}
+        </div>*/}
                 <div id = "AboutGrid" class="flex-grid">
                     <div className = "row">
                         <div class="AboutGrid-Item-Container">
@@ -23,6 +24,7 @@ class About extends Component{
                         </div>
                     </div>
                 </div>
+                <TracksSection />
             </div>
         )
     }

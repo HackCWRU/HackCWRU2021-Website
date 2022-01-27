@@ -6,7 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { green } from '@material-ui/core/colors';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { Link } from '@material-ui/core';
-import Signup from './Signup'
+//import Signup from './Signup'
 class CoCPopUp extends Component{
 
     constructor(props) {
@@ -47,7 +47,7 @@ class CoCPopUp extends Component{
             >
             
             <div id="CoCPopUp-Container">
-                {/*<div>Please read the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a></div>
+                <div>Please read the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct</a></div>
                 <FormGroup className ="CocFormGroup">
                     <FormControlLabel control={
                         <this.GreenCheckbox
@@ -65,11 +65,13 @@ class CoCPopUp extends Component{
                     
                     {this.state.checkedBox ? 
                     <div className = "registerButtonGroup">
-                        <a href={"https://my.mlh.io/oauth/authorize?client_id=92a0cd65f23af7c66fdf0aae482d48eda0b85a0f8c19631a5ddd4294361f0582&redirect_uri=" + returnLink + "&response_type=token"}><button id="registerBtn">Register</button></a>
+                        <a href={"https://forms.gle/4mHKFAi2Ncv5f1Eh6"}><button id="registerBtn">Register</button></a>
                     </div>
                     : "" }
-                    </FormGroup>*/}
-                <Signup/>
+                    </FormGroup>
+               {
+               //<Signup/>
+                }
             </div>
             </Dialog>
         )

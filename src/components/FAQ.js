@@ -8,12 +8,12 @@ class FAQ extends Component{
             <div id = "FAQSection">
                 {/*<div id="FAQBackgroundContainer">
                     <img id = "waterFall" src= {waterFall}></img>
-                </div>*/
+                </div>
                 <div className = "skewTitleBox">
                     <div>
                         FAQ
                     </div>
-                </div>}
+                </div>}*/}
                 <div id = "FAQBoxesContainer">
                     <div id ="FAQBoxesGrid">
                         <div className="row">
@@ -43,6 +43,12 @@ class FAQ extends Component{
                                 answer={`Nothing. Signups are free!`}/>
                             </div>
                             <div class="FAQItem">
+                                <FAQBox question={"How will we receive swag and prizes if the Hackathon is digital?"} 
+                                answer={`Prizes and swag will all be delivered via mail.`}/>
+                            </div>
+
+{/*
+                            <div class="FAQItem">
                                 <FAQBox question={"Is it still possible to do a hardware project if the hackathon is digital?"} 
                                 answer={`Yes! At the end of the Hackathon, you will submit a 5-10 minute video presentation 
                                 explaining your project and demonstrating its feasibility.`}/>
@@ -57,10 +63,6 @@ class FAQ extends Component{
                                 answer={`Computer not powerful enough? We've set up 100 remote AWS dev environments. For more info go to hackcwru.info/remotedev`}/>
                             </div>
                             <div class="FAQItem">
-                                <FAQBox question={"How will we receive swag and prizes if the Hackathon is digital?"} 
-                                answer={`Prizes and swag will all be delivered via mail.`}/>
-                            </div>
-{/*                            <div class="FAQItem">
                                 <FAQBox question={"Placeholder"} 
                                 answer={`Placeholder.`}/>
                             </div>

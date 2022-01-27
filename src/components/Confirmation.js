@@ -32,7 +32,7 @@ class Confirmation extends Component{
             >
             
             <div id="CoCPopUp-Container">
-                <div>You have successfully registered for HackCWRU 2020!</div>
+                <div>You have successfully registered for HackCWRU 2022!</div>
             </div>
             <Button onClick={this.closeModal.bind(this)} id="registerBtn">Back to main site</Button>
             </Dialog>

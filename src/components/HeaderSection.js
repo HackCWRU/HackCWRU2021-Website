@@ -75,7 +75,7 @@ class HeaderSection extends Component {
               
             </div>
             <div className= "headerButtonSection">
-              <Countdown HackDate={'March 18, 2022 00:00:00'}/>
+              <Countdown HackDate={'March 18, 2022 19:00:00'}/>
               <div className ="confirmation">
                 <Confirmation signUpConfirmation={this.state.signUpConfirmation}
                   finishSignUp={this.finishSignUp.bind(this)} />
@@ -83,22 +83,12 @@ class HeaderSection extends Component {
               </div>
 
               <div className = "registerButtonGroup">
-              
+                    
               <button onClick={this._onButtonClick.bind(this)} id="registerBtn">Register</button>
               
               <CoCPopUp showCodeOfConductBox={this.state.showCodeOfConductBox}
                 _onButtonClick={this._onButtonClick.bind(this)} /> 
-              <a id="registerBtn" href="https://docs.google.com/forms/d/e/1FAIpQLSeRPp1tLWAgMvsGbwPTGD2nfasxWoi0YXOfX7zn9T5viDp3Gg/viewform?usp=sf_link">
-                REGISTER
-              </a> 
-
               </div>
-
-            {/*
-              <div className = "oldWebsiteButtonGroup">
-                <a href="http://hack.cwru.edu/"><button id="oldWebsiteBtn">2020 website</button></a>
-              </div>
-            */}
             </div>
           </div>
         );
